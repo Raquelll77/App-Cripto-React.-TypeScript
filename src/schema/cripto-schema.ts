@@ -13,3 +13,4 @@ export const CryptoCurrencyResponseSchema =
     })
   })
 
+export const CryptoCurrenciesResponseSchema = z.array(CryptoCurrencyResponseSchema)
