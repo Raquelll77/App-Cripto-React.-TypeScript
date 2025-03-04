@@ -27,7 +27,9 @@ export const useCryptoStore = create<CryptoStore>()(devtools((set)=>({
       
       set(()=>({
         loading: true
+        
       }))
+      
       const result = await fetchCurrentCryptoPrice(pair)
       set(()=>({
         result,
